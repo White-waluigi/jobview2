@@ -317,7 +317,7 @@ export default function PieChart() {
 				<ul>
 					<li>Ein Klick auf ein Segment zeigt eine Übersicht über das Segment an, ein Klick auf "Weitere" zeigt die nächste Seite an</li>
 					<li>Ähnliche Jobs können in verschiedenen Industrien vorkommen. Z.b. Wirtschaftsdozent</li>
-					<li>Verschiedene Industrien können dieselben Industrie Sektoren haben, ein Sektor also insgesamt mehr Jobs haben kann.</li>
+					<li>Verschiedene Industrien können dieselben Industrie Sektoren haben, ein Sektor kann also über alle Industrien gesehen mehr Jobs haben.</li>
 					<li>Verwenden Sie den Zurück-Button um zur vorherigen Ansicht zu gelangen</li>
 					<li>Mehr interessante Projekte finden Sie auf <a href="https://www.marvinwyss.ch">meiner Website</a></li>
 				</ul>
