@@ -15,7 +15,7 @@ import Papa from 'papaparse';
 
 
 //const API_URL=NODE_ENV=="production"?"https://jobs.marvinwyss.ch/":"http://localhost:3003/"
-const API_URL=process.env.NODE_ENV=="production"?"https://jobs.marvinwyss.ch/":"http://localhost:3003/"
+const API_URL=process.env.NODE_ENV=="production"?"https://jobs.marvinwyss.ch/api/jobs/":"http://localhost:3003/api/jobs/"
 
 
 const readCSV= async (file) => {
