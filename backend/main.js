@@ -27,7 +27,7 @@ const cn = {
 	port: 5432,
 	database:"jobview",
 	user:"postgres",
-	password:"password"
+	password:"postgres"
 };
 
 let db = pgp(cn);
