@@ -40,7 +40,7 @@ var jsonParser = bodyParser.json()
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 // POST /login gets urlencoded bodies
-app.get('/jobs', urlencodedParser, async function (req, res) {
+app.get('/api/jobs', urlencodedParser, async function (req, res) {
 
 	try{
 

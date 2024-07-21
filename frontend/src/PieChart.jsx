@@ -112,9 +112,9 @@ export default function PieChart() {
 		let otherId=-1
 		let resp
 		if(dataSetting.filter){
-			resp=await axios.get(`http://localhost:3000/jobs`,{params:{page:id,groupby:field,filterField:dataSetting.filter.field,filterValue:dataSetting.filter.value}})
+			resp=await axios.get(`http://localhost:3000/api/jobs`,{params:{page:id,groupby:field,filterField:dataSetting.filter.field,filterValue:dataSetting.filter.value}})
 		}else{
-			resp=await axios.get(`http://localhost:3000/jobs`,{params:{page:id,groupby:field}})
+			resp=await axios.get(`http://localhost:3000/api/jobs`,{params:{page:id,groupby:field}})
 		}
 
 
