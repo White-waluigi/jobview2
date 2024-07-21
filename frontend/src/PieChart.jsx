@@ -14,6 +14,9 @@ import React from 'react'
 import Papa from 'papaparse';
 
 
+const API_URL=NODE_ENV=="production"?"https://jobs.marvinwyss.ch/":"http://localhost:3003/"
+
+
 const readCSV= async (file) => {
 	return await new Promise((resolve, reject) => {
 		// Parsing the CSV string
@@ -112,9 +115,9 @@ export default function PieChart() {
 		let otherId=-1
 		let resp
 		if(dataSetting.filter){
-			resp=await axios.get(`http://localhost:3000/api/jobs`,{params:{page:id,groupby:field,filterField:dataSetting.filter.field,filterValue:dataSetting.filter.value}})
+			resp=await axios.get(API_URL,{params:{page:id,groupby:field,filterField:dataSetting.filter.field,filterValue:dataSetting.filter.value}})
 		}else{
-			resp=await axios.get(`http://localhost:3000/api/jobs`,{params:{page:id,groupby:field}})
+			resp=await axios.get(API_URL,{params:{page:id,groupby:field}})
 		}
 
 
