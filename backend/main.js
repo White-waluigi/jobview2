@@ -61,7 +61,7 @@ app.get('/api/jobs', urlencodedParser, async function (req, res) {
 
 		const query = `WITH topIndustries AS (
 			SELECT 
-				$3:name, 
+				$3:name::text, 
 				COUNT(*) as count,
 				0 as p
 			FROM 
@@ -82,7 +82,7 @@ app.get('/api/jobs', urlencodedParser, async function (req, res) {
 		),
 		remainingIndustries AS (
 			SELECT
-				'Weitere' as $3:name,
+				'Weitere'::text as $3:name,
 				COUNT(*) as count,
 				1 as p
 			FROM
