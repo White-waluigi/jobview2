@@ -1,0 +1,2044 @@
+industrySector,count
+none,6386
+Pflege,3359
+Maschinenbau,2495
+Software,2237
+IT,1745
+Produktion,1466
+Bau,1097
+Verkauf,1080
+Elektrotechnik,1067
+Elektronik,1064
+Medizin,1020
+Kulinarik,964
+Elektrik,887
+Logistik,803
+Detailhandel,766
+Holzverarbeitung,734
+Transport,626
+Informatik,533
+Immobilienverwaltung,531
+Holzbau,487
+Handel,484
+Architektur,466
+Gartenbau,462
+Metallbau,454
+Montage,454
+Automatisierung,438
+Einkauf,436
+Sicherheit,419
+Heizung,414
+Vertrieb,407
+Kundenservice,402
+Gesundheit,377
+HR,335
+Autos,327
+Konstruktion,294
+Lebensmittel,284
+Service,279
+Sanitär,275
+Metall,273
+Systemtechnik,260
+Hotellerie,260
+Dachdeckerei,246
+Metallverarbeitung,233
+Psychiatrie,219
+Schule,211
+Public Health,208
+Mécanique,201
+care,200
+Installation,197
+Personalwesen,197
+Kundenbetreuung,197
+Fertigung,189
+Straßenbau,186
+Wartung,182
+Gebäudetechnik,179
+Lagerwesen,178
+Sanitärinstallation,166
+Cloud Computing,161
+Technologie,160
+Automobilindustrie,160
+Anlagenbau,159
+Mauerwerk,156
+Reinigung,156
+Qualitätssicherung,150
+Krankenhaus,150
+Strom,148
+Automobil,144
+Verwaltung,141
+Gipsarbeiten,138
+Backwaren,131
+Mode,131
+Notfallmedizin,129
+Export,127
+Karosseriebau,126
+Beton,126
+Psychologie,126
+Metzgerei,125
+Beratung,124
+Schreinerei,123
+Netzwerk,122
+Tiefbau,120
+Berufsbildung,115
+Schienenverkehr,114
+Pädagogik,108
+Marketing,106
+Fertigungstechnik,106
+Apotheken,104
+Kältetechnik,99
+Projektmanagement,99
+Einzelhandel,96
+Maschinen,95
+Malerei,95
+Rehabilitation,95
+Systemadministration,94
+Technik,94
+Kundenberatung,90
+Solarenergie,89
+Holzbearbeitung,89
+Grosshandel,89
+Systemintegration,89
+Reifen,87
+Ingenieurwesen,85
+Medizintechnik,85
+Physiotherapie,85
+Krankenpflege,84
+Photovoltaik,83
+Instandhaltung,83
+Maurer,78
+Pharmazie,78
+Verkehr,77
+Gastronomie,77
+Elektrizität,76
+Laboratorium,76
+Kommunikation,75
+Recruiting,75
+ERP,74
+Anästhesie,73
+Finanzen,73
+Werkstatt,71
+Infrastruktur,70
+Versorgung,69
+Bahn,67
+Gesundheitsfachberatung,66
+Kranfahrer,66
+Gesundheitsfachfrau,65
+Soziales,64
+Landtechnik,64
+Labor,63
+Spedition,62
+Fahrzeugtechnik,62
+Hochbau,61
+Chirurgie,60
+Gesundheitsfachberuf,60
+Support,60
+Lackierung,60
+Planung,60
+Consulting,60
+Restaurant,59
+Verpackung,59
+Kaufmännische Dienstleistungen,59
+Wohnen,59
+Mechanik,58
+Onkologie,58
+Immobilienmarkt,57
+Metallurgie,56
+Systemgastronomie,56
+Gesundes Essen,54
+Mechatronik,52
+Kinderbetreuung,52
+Installationstechnik,51
+Fassadenbau,50
+Gesundheitsfachperson,49
+Entwicklung,49
+Kunststofftechnologie,49
+Erneuerbare Energie,49
+Haushalt,48
+Produkte,48
+Cuisine,48
+Dienstleistung,48
+Holz,47
+Systeme,47
+Bauwesen,47
+Hygiene,47
+Zoll,46
+Energieversorgung,46
+Möbel,46
+Installationen,45
+Aufzüge,45
+Forschung,44
+Immobilien,44
+Recht,44
+Soziale Arbeit,44
+Informatique,43
+Kosmetik,43
+Datenmanagement,43
+Personalberatung,43
+Hauswirtschaft,42
+Bauingenieurwesen,42
+Industrie,42
+Kaufhaus,41
+Forschung und Entwicklung,41
+Betreuung,41
+Messtechnik,41
+Arztpraxis,40
+Paketversand,40
+Altenpflege,38
+Bauunternehmen,37
+Fahrzeugbau,37
+Ersatzteile,37
+Schalenproduktion,36
+Schlosserei,36
+Landwirtschaft,35
+Zahnmedizin,35
+Kleidung,35
+Gerüstbau,35
+Maintenance,34
+Augenheilkunde,34
+Jura,34
+Radiologie,34
+Schalen,34
+Umwelt,34
+Médecine,33
+Uhrenherstellung,33
+Pharma,33
+Warenwirtschaft,33
+Friseur,33
+Innenausbau,32
+Kunststoff,32
+Intensivpflege,32
+Sozialarbeit,32
+Klinik,32
+Schifffahrt,32
+Fleischwaren,30
+Gartenpflege,30
+E-Commerce,30
+Datenanalyse,30
+Engineering,29
+Rettungsdienst,29
+Metallbearbeitung,29
+Elektromobilität,29
+Uhren,29
+Schadenregulierung,28
+Pharmazeutika,28
+Automobile,28
+Nachhaltigkeit,28
+Design,28
+Kfz-Meisterbetrieb,27
+Commerce,27
+Robotik,27
+Catering,27
+Supermarkt,26
+Getränke,26
+Telekommunikation,26
+Ziviltechnik,26
+Einrichtung,25
+Hardware,25
+Wasserwirtschaft,25
+Maschinenfertigung,25
+Glas,25
+Automation,25
+Fitness,24
+Handwerk,24
+Datenbanken,24
+Haushaltsgeräte,24
+Elektromechanik,24
+Dienstleistungen,24
+Hochschule,24
+Nahrungsmittel,24
+Kardiologie,24
+Gesundheitswesen,23
+Soins de santé communautaire,23
+Digital Marketing,23
+Geodäsie,23
+Blumen,23
+Tunnelbau,23
+Getreide,22
+Chemische Industrie,22
+Lagerwirtschaft,22
+Logopädie,22
+Fast Food,22
+Kundendienst,22
+Büro,22
+Strassenbau,22
+Werkzeugbau,22
+Anwalt,21
+Lüftung,21
+Autozubehör,21
+Spitex,21
+Innenarchitektur,20
+Heizungstechnik,20
+Landschaftsgestaltung,20
+Erneuerbare Energien,20
+Isolierung,20
+Bahnhof,19
+Versicherung,19
+Wohnen und Freizeit,19
+Tankstellen,19
+Franchise,19
+Administration,19
+Schlosser,19
+Schulbildung,19
+Verfahrenstechnik,19
+Wasser,19
+Gesundheitsberufe,18
+Schmuck,18
+Kfz-Handwerk,18
+Lebensmitteltechnologie,18
+Motorrad,18
+Events,18
+Ernährung,18
+Betriebstechnik,18
+CFC,18
+Kaffee,18
+Automobiltechnik,18
+Weinhandel,18
+Erziehung,18
+3D-Design,18
+Baumaschinen,17
+Journalismus,17
+Gebäudereinigung,17
+Schiffbau,17
+Lieferkette,17
+Kunststofftechnik,17
+Versorgungskette,17
+Energie,17
+Stellenvermittlung,16
+Fahrzeugwartung,16
+EMS,16
+Textil,16
+Dachbau,16
+Supply Chain,16
+Bus,16
+Digitalisierung,16
+Hydraulik,16
+Filialleitung,16
+Wirtschaftsinformatik,16
+Heizung und Sanitär,16
+Luftfracht,15
+Recycling,15
+Netzbau,15
+Food,15
+ Ingenieurwesen,15
+Reisen,15
+Santé,15
+Haustechnik,15
+Versand,15
+Ausbildung,15
+Klimatisierung,15
+Optik,15
+Intensivmedizin,15
+Business Intelligence,15
+Milchproduktion,15
+Frauenheilkunde,15
+Tierhaltung,14
+Automobilzubehör,14
+Glasbearbeitung,14
+IT-Sicherheit,14
+Bäckerei,14
+Taxi,14
+Krankenversicherung,14
+Produktdesign,14
+Fischerei,14
+Bildung,14
+psychiatry,14
+Fernwärme,14
+Schulwesen,14
+Informationstechnologie,14
+Beschaffung,14
+Geoinformation,14
+Kaufmännischer Vertrieb,14
+Forstwirtschaft,14
+Gewerbe,14
+Aussenhandel,14
+Gipserarbeiten,13
+Non-Food,13
+Multimedia,13
+Post,13
+Human Resources,13
+Klima,13
+Berufliche Integration,13
+Analytik,13
+Personalverwaltung,13
+Fahrrad,13
+Buchhaltung,12
+Kaufmann,12
+Kfz-Mechanik,12
+Milchwirtschaft,12
+Feuerwehr,12
+Juristische Berufe,12
+home care,12
+E-Mobilität,12
+Mobilität,12
+IT-Support,12
+Orthopädie,12
+Behindertenbetreuung,12
+Artificial Intelligence,12
+Soins infirmiers,12
+Hôtellerie,11
+Medizinprodukte,11
+Chemie,11
+Personal,11
+Musik,11
+Soziale Dienstleistungen,11
+Justiz,11
+Molkerei,11
+Hebezeuge,11
+Nephrologie,11
+Soin,11
+Construction,11
+Biotechnologie,11
+Stadtverwaltung,11
+Dachdeckung,11
+Umweltschutz,11
+Wellness,11
+Aluminium,11
+Convenience,11
+Palliativmedizin,10
+Publizistik,10
+Maler,10
+Pädiatrie,10
+Rechenzentrum,10
+Schweißen,10
+Électricité,10
+Kfz-Service,10
+Antriebstechnik,10
+Gesundheitsberuf,10
+Innovation,10
+Juristische Beratung,10
+Schweißtechnik,10
+Wasserbau,10
+Papierwaren,10
+Eventmanagement,10
+Bauunterhaltung,10
+Sondermaschinenbau,9
+Soziale Dienste,9
+Technischer Handel,9
+Öffentlicher Verkehr,9
+Stahlbau,9
+Sécurité,9
+Microsoft,9
+Café,9
+Werbung,9
+Juristische Dienstleistungen,9
+Akustik,9
+Reha,9
+Kühltechnik,9
+AFP,9
+Heimtextilien,9
+Bauunternehmung,9
+Personalentwicklung,9
+Grafik,9
+Netzbetrieb,9
+Sprachunterricht,9
+Management,9
+Drucktechnologie,9
+Maschinenfahrung,9
+Lehre,9
+Intralogistik,9
+Elektro,9
+Operations,9
+Busverkehr,9
+Cloud,9
+Verarbeitung,9
+Hörgeräte,8
+Polizei,8
+Notariat,8
+Gipserei,8
+Landmaschinen,8
+Psychotherapie,8
+Alterspflege,8
+Kommune,8
+Abfallentsorgung,8
+Abfall,8
+Biologie,8
+Autowerkstatt,8
+Pharmazeutische Industrie,8
+Kälte,8
+Produktentwicklung,8
+Kindergarten,8
+Industrie 4.0,8
+Instandsetzung,8
+Technische Infrastruktur,8
+Fahrservice,8
+Sportartikel,8
+Nachverkauf,8
+Kunststoffverarbeitung,8
+Restaurants,8
+Juwelier,8
+Prototypenbau,8
+Datenverarbeitung,8
+Sanitärinstallationen,8
+Distribution,8
+Kiosk,8
+Sport,8
+Fahrzeug,8
+Maschinenbetrieb,8
+Automobilzulieferung,8
+Vermarktung,8
+Klinische Forschung,8
+Dermatologie,8
+Veranstaltungen,8
+Schweinerei,7
+Lebenswissenschaften,7
+Pumpen,7
+Produktionstechnik,7
+Assistance médicale,7
+ Facility Management,7
+Luftfahrt,7
+Flugzeugbau,7
+Malerwerkstatt,7
+Wohnungswesen,7
+Arbeitsschutz,7
+Automatenbetreuung,7
+Kasse,7
+Textilien,7
+Reise,7
+Lichttechnik,7
+Frauenklinik,7
+Politik,7
+Herstellung,7
+Apotheke,7
+Formenbau,7
+Küche,7
+Weinbau,7
+Sozialhilfe,7
+Lüftung und Klima,7
+Technische Produkte,7
+Verteilnetz,7
+Medien,7
+Rechtsberatung,7
+Brauerei,7
+Haarpflege,7
+Möbelbau,7
+Sanitärtechnik,7
+Banken,7
+Stadtplanung,7
+Lieferdienst,7
+Zerspanung,7
+Fahrzeugunterhalt,7
+Paysage,6
+Prozesse,6
+Energieeffizienz,6
+Werkzeugmaschinen,6
+Parfümerie,6
+Straßenverkehr,6
+Eisenbahn,6
+Nuklearmedizin,6
+Servicetechnik,6
+Business,6
+Gewerbeimmobilien,6
+Geburtshilfe,6
+Wärme,6
+Cybersecurity,6
+Heizung und Klima,6
+Neurologie,6
+Brandschutz,6
+Werkhof,6
+Dokumentation,6
+Aerospace,6
+Gebäudewartung,6
+Restauration,6
+Wirtschaft,6
+Spielwaren,6
+Lebensmittelproduktion,6
+B2B,6
+Möbeldesign,6
+Mode und Accessoires,6
+Gesundheitsdienstleistungen,6
+Frauenhilfe,6
+Anlagenbetrieb,6
+medizin,6
+Fahrdienstleistungen,6
+Branding,6
+Gerichtswesen,6
+Arbeitsrecht,6
+Rezeption,6
+Rohrleitungsbau,6
+Klimaschutz,6
+Supply-Chain-Management,6
+Beauty,6
+Übersetzung,6
+Verlad,6
+Kunst,6
+Schweisserei,6
+Réseaux,5
+Drogerie,5
+geriatrie,5
+Schweizerische Eisenbahnunternehmung,5
+Autoglas,5
+Flughafen,5
+Umwelttechnik,5
+Film,5
+Personenverkehr,5
+Abbruch und Sanierung,5
+Verkehrstechnik,5
+Formation,5
+Recruitment,5
+Augenoptik,5
+Disposition,5
+Data Science,5
+Grafische Industrie,5
+Schulen,5
+Zement,5
+Ménage,5
+Kinderkrankenhaus,5
+Mécanique agricole,5
+Flugverkehr,5
+Geschäftsführung,5
+Soins à domicile,5
+Wäscherei,5
+Wasserkraft,5
+Abwasser,5
+Kirche,5
+Heimwerkerbedarf,5
+Food Service,5
+Fahrdienst,5
+Maschinenfahrer,5
+Jugendhilfe,5
+Sanität,5
+Personalmarketing,5
+Schönheit,5
+Feinmechanik,5
+Audit,5
+Installationshandwerk,5
+Schokolade,5
+Elektrohandel,5
+Schadenversicherung,5
+Kernkraftwerk,5
+Energietechnik,5
+Fahrschule,5
+Palliativversorgung,5
+Konditorei,5
+Materialwissenschaft,5
+Asyl,5
+Gewinde,5
+Schiffsbau,5
+Fahrzeugverwaltung,5
+Versicherungen,5
+Ladenbau,5
+Zustellung,5
+Mode und Sport,5
+Unternehmenskommunikation,5
+Risikomanagement,5
+Kurierdienst,5
+Travaux publics,5
+CAD,5
+Ingenieurbau,4
+Gesundheitsprodukte,4
+Digital,4
+Rohrtechnik,4
+Telefonie,4
+Milchprodukte,4
+Soziologie,4
+Förderung,4
+Pharmatechnologie,4
+Schleiftechnik,4
+Integration,4
+Geschäftsentwicklung,4
+Körperpflege,4
+Natur,4
+Soziale Medien,4
+Kühltransport,4
+Reparatur,4
+Schutz,4
+Luftverkehr,4
+Haushaltswaren,4
+Leitungsbau,4
+Erwachsenenbildung,4
+Lebensmittelindustrie,4
+Kinder- und Jugendmedizin,4
+Kultur,4
+Rettung,4
+Güterverkehr,4
+Tankstelle,4
+Reiseverkehr,4
+Bar,4
+Medizinische Technologie,4
+Produktdatenmanagement,4
+Motorräder,4
+Türen,4
+Druckindustrie,4
+Technische Kaufleute,4
+Urgences médicales,4
+Laborgeräte,4
+Patente,4
+Nettoyage,4
+Pferdezucht,4
+Horlogerie,4
+Wintersport,4
+Glaserei,4
+Obstbau,4
+Kranfahrung,4
+Arbeitsverwaltung,4
+Heilpädagogik,4
+Maison,4
+Immobilienberatung,4
+Kabeltechnik,4
+Online-Marketing,4
+Markt,4
+Patent,4
+Hygiène,4
+Heiztechnik,4
+Papierwaren und Reisen,4
+Stromversorgung,4
+Healthcare,4
+Küchenbau,4
+Museum,4
+Aussendienst,4
+E-Learning,4
+Heimtechnik,4
+Roboter,4
+chirurgie,4
+Import-Export,4
+Medical Devices,4
+Struktur,4
+Lagerverwaltung,4
+Grossvertrieb,4
+Gesundheitsversicherung,4
+Geräte,4
+Krankenhäuser,4
+Finanzdienstleistungen,4
+hôpital,4
+Geotechnik,4
+Behindertenhilfe,4
+Wissenschaft,4
+Migration,4
+Mikrotechnik,4
+Immobilienbranche,4
+Bio,4
+Hebamme,4
+Halbleiter,4
+Ski,4
+Fahrzeugpflege,4
+Logistique,4
+Immobilienmanagement,4
+Flugzeugwartung,4
+Blumenhandel,4
+Food and Beverage,4
+Urologie,4
+Décoration,3
+Oldtimer,3
+Patentrecht,3
+Wasserversorgung,3
+Prüfung,3
+Einbau,3
+Automobilbranche,3
+Anlagenführung,3
+Zivilschutz,3
+Verkehrstechnologie,3
+Landschaftsarchitektur,3
+Keramik,3
+Rohrleitungen,3
+Nuclear,3
+Fördertechnik,3
+Jardinage,3
+Betriebsunterhalt,3
+Internationales Geschäft,3
+Chemikalien,3
+Flugzeugtechnik,3
+Lasertechnologie,3
+Förderanlagen,3
+Kliniken,3
+Bau und Freizeit,3
+Wäsche,3
+Denkmalpflege,3
+Personalverleih,3
+Molekularbiologie,3
+Autohandel,3
+community care,3
+Renewable Energy,3
+Gebäudewesen,3
+Familienrecht,3
+Schaltanlagen,3
+Baubranche,3
+Maschinen und Geräte,3
+Physik,3
+Fusspflege,3
+Untertagebau,3
+Verteilung,3
+Elektroinstallation,3
+Getriebe,3
+Garten,3
+Sprachen,3
+Fahrzeuge,3
+Objektmanagement,3
+Customer Service,3
+Datenverwaltung,3
+Altersmedizin,3
+Recreations,3
+Grafikdesign,3
+Bauverwaltung,3
+Laboratoire,3
+Sicherung,3
+Schwimmbad,3
+Intelligenz,3
+Reinraumtechnik,3
+Ménager,3
+Staat,3
+Accounting,3
+Industrial Automation,3
+Malerwerk,3
+Wasserschaden,3
+Gase,3
+Kfz-Zubehör,3
+Fahrstuhlbau,3
+Ersatzteil,3
+Parks,3
+Gas,3
+Automazione,3
+Bibliothek,3
+Museen,3
+Gemeinschaften,3
+Tierpflege,3
+Nähmaschinen,3
+Zeitung,3
+Ärzte,3
+Kaufmännische Leitung,3
+public health,3
+Kanzlei,3
+Patientenbetreuung,3
+Paketdienstleistung,3
+Glas und Fenster,3
+Metallwerkstoffe,3
+oncologie,3
+Digitale Medien,3
+Immobilienwirtschaft,3
+intensive care,3
+Unterhaltung,3
+Gerätetechnik,3
+Parken,3
+Bodenbeläge,3
+Arzneimittel,3
+Elektronikdesign,3
+SAP,3
+Freizeit,3
+Installations,3
+Naturwissenschaften,3
+Hauswartung,3
+Verkehrsbetriebe,3
+Einbaumaschinen,3
+Materialwirtschaft,3
+Wohnungsbau,3
+Holzhandel,3
+Wasserleitungen,3
+Schalung,3
+Zivilstand,3
+Automobilhandel,3
+Santé publique,3
+Baumaterial,3
+Verkehrsbau,3
+Mechaniker,3
+Datenschutz,3
+Individualversicherung,3
+Bauunterhalt,3
+Ärztepraxis,3
+Unternehmensberatung,3
+Altlasten,3
+Mikrobiologie,3
+Städtebau,3
+Musikinstrumente,3
+Personalmanagement,3
+Leichtbau,3
+Luxuswaren,3
+Recrutement,3
+Publikationen,3
+Metallwaren,3
+Ökonomie,3
+Bauautomation,3
+Mess- und Prüftechnik,3
+Kranbetrieb,3
+Prozessoptimierung,3
+Autoteile,3
+Gewerbe und Industrie,3
+Gerontologie,3
+Lüftungstechnik,3
+Sozialversicherung,3
+Hotellerie und Gastronomie,3
+Kfz,3
+Schulbus,3
+Kundenbeziehungen,3
+Fachhandel,3
+Abwasserentsorgung,3
+Polier,3
+Baumschutz,3
+Gesundheitsberatung,3
+Agrar,3
+Digitale Kommunikation,3
+Customer Retention,3
+Verkehrsbetrieb,3
+B2C,3
+Aftersales,3
+Leistungen,3
+Soziokultur,3
+Betriebliche Gesundheitsförderung,2
+Spleisserei,2
+Aviation,2
+Cloud-Computing,2
+Avionik,2
+Sonderpädagogik,2
+Maschinenkonstruktion,2
+Datenwissenschaft,2
+Geoinformatik,2
+Fahrzeughandel,2
+Zeltbau,2
+Batterien,2
+Spritzguss,2
+Kunstbauten,2
+Prévention,2
+Automatisation,2
+Automobilbau,2
+Marktforschung,2
+Baustoffe,2
+Essen,2
+Online-Medien,2
+Theater,2
+Servizi clienti,2
+Recreation,2
+Innendekoration,2
+Belagsbau,2
+Dietologie,2
+Schmieden,2
+Suchtbehandlung,2
+Verkehrsplanung,2
+Eiscreme,2
+Kaufmannschaft,2
+Mathematik,2
+Windkraft,2
+Bau und Handwerk,2
+Anlagen- und Haustechnik,2
+Bewachung,2
+Prävention,2
+Stahl,2
+Hartwaren,2
+Lifescience,2
+Bauherrengemeinschaft,2
+Installation de chauffage,2
+Lernen,2
+Kraftwerke,2
+Nautik,2
+Alimentation,2
+Mode und Kosmetik,2
+Demontage,2
+Farbe,2
+Privatunterricht,2
+Zählerwartung,2
+Spezialmaschinenbau,2
+Flugzeugunterhaltung,2
+Échafaudage,2
+Soins de santé,2
+Tiermedizin,2
+Meccanica,2
+Gravure,2
+Tarif,2
+Betonwaren,2
+Fliesen,2
+Mühlen,2
+Omnibus,2
+Trocknungstechnik,2
+Medical Technology,2
+UX,2
+Soins,2
+Kinderartikel,2
+Soins communautaires,2
+Fußpflege,2
+Bauprodukte,2
+Smart Home,2
+Zulieferer,2
+Prozessentwicklung,2
+Hörakustik,2
+Fourniture,2
+Tief- und Strassenbau,2
+Fotografie,2
+Gemüsebau,2
+Notfallhilfe,2
+Siebdruck,2
+Magazin,2
+Schafzucht,2
+medicine,2
+Kanalbau,2
+Mobile,2
+Tierproduktion,2
+Hochschulbildung,2
+Gasversorgung,2
+Bergbau,2
+Juwelen,2
+Notfallrettung,2
+Bauhandwerk,2
+Einkauf und Verkauf,2
+Food&Beverage,2
+Internat,2
+Pharmatechnik,2
+Betonindustrie,2
+Unternehmensrecht,2
+Film und Fernsehen,2
+Arbeitssicherheit,2
+Baumaterialien,2
+Electrotechnik,2
+Praxis,2
+Therapie,2
+Fleischverarbeitung,2
+Glasfaser,2
+Geschäft,2
+Kurierdienstleistungen,2
+Treppenbau,2
+Umbau,2
+Jugendarbeit,2
+Dairy,2
+Informationssicherheit,2
+HF-Technik,2
+Buchhandel,2
+Génie civil,2
+Geflügelzucht,2
+Polytechnik,2
+Weiterbildung,2
+Entlohnung,2
+Prozesstechnik,2
+Farben,2
+Chemische Verarbeitung,2
+Telefon,2
+Médical,2
+Anlagen,2
+Pneumologie,2
+Wohnimmobilien,2
+psychogeriatry,2
+Stadtgarten,2
+Gesundheitsförderung,2
+Tanktransport,2
+Glas und Metall,2
+Fördergeräte,2
+Abbruch,2
+Heizung und Kälte,2
+Kfz-Dienstleistung,2
+Personnel,2
+Metallwerkstatt,2
+Grünfläche,2
+Umzug,2
+Metallurgia,2
+Import/Export,2
+Publikation,2
+Atemschutz,2
+Wohlfahrt,2
+Fundraising,2
+Skigebiet,2
+Blutspende,2
+Gemüse,2
+Frauenmedizin,2
+Direktmarketing,2
+Rekrutierung,2
+Waffen,2
+Kompressoren,2
+Bauabfall,2
+Laborchemikalien,2
+Biochemie,2
+Apparatebau,2
+Communication,2
+Gästeservice,2
+Mess- und Regeltechnik,2
+Cafeteria,2
+Nassysteme,2
+Oberflächentechnik,2
+Mechanische Werkstatt,2
+Ladenbetrieb,2
+Hôpital,2
+Edilizia,2
+Werkzeugtechnik,2
+Futterproduktion,2
+StoShop,2
+Schleiferei,2
+Schutztechnik,2
+Terrassement,2
+Energiewirtschaft,2
+Investitionsgüter,2
+Straßenunterhalt,2
+Zivilrecht,2
+Unfallversicherung,2
+hospital,2
+Mühlenbau,2
+Marktüberwachung,2
+Lager,2
+Akutpflege,2
+Fensterbau,2
+Giardinaggio,2
+Türtechnik,2
+Personenversicherung,2
+Immobilienentwicklung,2
+Schweizerische Eisenbahn,2
+Raumplanung,2
+Digital Health,2
+Import,2
+Papierproduktion,2
+Retail,2
+Gärtnerei,2
+Seelsorge,2
+Sanitätswesen,2
+Blutbank,2
+Zolle,2
+Studium,2
+Logistiklösungen,2
+Produktionstechnologie,2
+Akutmedizin,2
+Personalkranken- und Unfallversicherung,2
+Textil/Sport,2
+Radio,2
+Tabakwaren,2
+Fleischproduktion,2
+Atelier,2
+Bodenarbeiten,2
+Make-up,2
+Produktionslogistik,2
+Banktechnik,2
+Emergency Medicine,2
+Fenster,2
+Bürobedarf,2
+Operational Planning,2
+Kosmetik & Papierwaren,2
+Holzwaren,2
+Netzdienstleistungen,2
+Blechbearbeitung,2
+Schwermaschinenfertigung,2
+Biogas,2
+Fußball,2
+Telefonverkauf,2
+Messung,2
+Additive Manufacturing,2
+Konfektion,2
+Schliesssysteme,2
+Bâtiment,2
+Produktmanagement,2
+Wirtschaftswissenschaften,2
+Bauhandel,2
+Möbelherstellung,2
+Lagerhaltung,2
+Wohnheim,2
+Papier,2
+Pneumatik,2
+Produktionsplanung,2
+Textilproduktion,2
+Kfz-Mechatronik,2
+Kalibrierung,2
+Wein und Spirituosen,2
+medizinische Versorgung,2
+Metzgerei und Fisch,2
+Notdienst,2
+Grünraumplanung,2
+Betriebliches Gesundheitsmanagement,2
+Zahlungsverkehr,2
+Miete und Verwaltung,2
+Produzione,2
+Schulung,2
+Konsultation,2
+Leistungssport,2
+Baukrane,2
+Stiftung,2
+rehabilitation,2
+Abdichtung,2
+Familienhilfe,2
+Distributionswesen,2
+Elektrobranche,2
+Vakuumtechnik,2
+Outlet,2
+Druck und Verpackung,2
+Landhandel,2
+Produktpflege,2
+Kranbau,2
+Raumentwicklung,2
+Rohstoffe,2
+Schutzmaßnahmen,2
+Pflanzenpflege,2
+Bauindustrie,2
+Raumpflege,2
+Deckenbau,2
+Mobilfunk,2
+Anästhesiologie,2
+CRM,2
+Packaging,2
+Juwelen und Uhren,2
+Motoren,2
+Inneneinrichtung,2
+Prozess,2
+Fahrer,2
+Überwachung,2
+Netzbetreiber,2
+Reisebüro,2
+Polymerchemie,2
+Uhren und Schmuck,2
+Schutzkleidung,2
+Webentwicklung,2
+Public Relations,2
+Sicherheitstechnik,2
+Mechanical Engineering,2
+Haftpflicht,2
+Produktdatenbank,2
+Medizintechnologie,2
+Gartenarchitektur,2
+Reiseverwaltung,2
+Sanitaire,2
+Notfall,2
+Kriminalität,2
+Glasbau,2
+Öffentlicher Sektor,2
+Telemedizin,2
+Gestion de biens,2
+Gebäudemanagement,2
+Kriminalvorfälle,2
+Ton,2
+Nasschemie,2
+Siedlungsentwässerung,2
+Künstliche Intelligenz,2
+Wärmeversorgung,2
+Pflanzenbau,2
+Wiederverkauf,2
+Signaltechnik,2
+Feldservice,2
+Philanthropie,2
+Abfüllung,2
+Ladenleitung,2
+Gastgewerbe,2
+Höhere Fachschule,2
+Kühllogistik,2
+Aviculture,2
+Gewerbeberatung,2
+Nähwesen,2
+Industriemaschinen,1
+Elektronik-Komponenten,1
+Therapietiere,1
+Technische Ausbildung,1
+Dental,1
+Packstelle,1
+Reinraum,1
+Verkauf und Einkauf,1
+Ackerbau,1
+Druckmedien,1
+Additive,1
+Arealentwicklung,1
+Allgemeinwaren,1
+Urbanismus,1
+Kfz-Zulieferung,1
+Luft- und Lärmschutz,1
+Motorsport,1
+Schweizerische Bundesbahnen,1
+Rohstoffhandel,1
+Biomechanik,1
+Heimhilfe,1
+Softwareberatung,1
+Prüftechnik,1
+Organisation,1
+Chemische Zwischenprodukte,1
+Lebensversicherung,1
+Feldbau,1
+Veicoli,1
+Steuerungstechnik,1
+Mechanische Konstruktion,1
+Haushaltshilfe,1
+Fahrgastinformationssysteme,1
+Luxusreisen,1
+Behindertenpflege,1
+Spitäne,1
+Qualifikation,1
+Baustoff,1
+Prozessmanagement,1
+Suchdienst,1
+Heim und Lifestyle,1
+Tierheilkunde,1
+Manutenzione,1
+Santé communautaire,1
+Gesundheitspolitik,1
+Textilindustrie,1
+Straßenreinigung,1
+Fortbildung,1
+Industriebedarf,1
+Industrielle Lösungen,1
+Telefonvermittlung,1
+Additive Fertigung,1
+Gewinnung,1
+Zellkultur,1
+Kalkstein,1
+Kraftverkehr,1
+Betonproduktion,1
+Regulatory Affairs,1
+Fachberatung,1
+Metallindustrie,1
+Invalidenversicherung,1
+Beauty & Gesundheit,1
+Pharmaindustrie,1
+Volleyball,1
+Präzisionsmechanik,1
+Patientenservice,1
+Drohnen,1
+Körpertherapie,1
+Auto,1
+Backware,1
+Softwareentwicklung,1
+Heizung und Haustechnik,1
+Medienproduktion,1
+Wirtshaus,1
+Kanalservice,1
+Kunsttherapie,1
+Biegemaschinen,1
+Trockentechnik,1
+Facility Management,1
+Neurochirurgie,1
+Tarife,1
+Stanzen,1
+Eisbearbeitung,1
+Kampagnenmanagement,1
+Zulassung,1
+Schulbetrieb,1
+Gipsschleuse,1
+Arbeitsintegration,1
+Glasinstallation,1
+Käse,1
+Zytologie,1
+Kampagnen,1
+Autoverwaltung,1
+Rechtsetzung,1
+Sicherheitsberatung,1
+Prozesssteuerung,1
+Kaufmännische Berufe,1
+Lufttechnik,1
+Lüftungssysteme,1
+Gynäkologie,1
+Spielentwicklung,1
+Schädlingsbekämpfung,1
+Production végétale,1
+Masseur,1
+Kraftwerk,1
+Anlagenplanung,1
+Prothetik,1
+Kleinspüler,1
+Bau und Hobby,1
+Marktverkauf,1
+Fahrzeugunterhaltung,1
+Zerspanungstechnik,1
+ Vermessung,1
+Strahlenmaschinen,1
+Rennsport,1
+Soziale Kommunikation,1
+Pflegewissenschaft,1
+Papierwaren/Spielwaren,1
+Dach- und Fassadenbau,1
+Kfz-Industrie,1
+Außenhandel,1
+Gastronomiegeräte,1
+Kinderhilfe,1
+Datenspeicher,1
+Medizinische Überwachung,1
+3D-Druck,1
+Holzprodukte,1
+Notfallpflege,1
+Verarbeitendes Gewerbe,1
+Fahrzeugteile,1
+Kommissionierung,1
+Bauherrenvertreter,1
+Versorgungstechnik,1
+Umwelttechnologie,1
+Montage und Service,1
+Prozessdesign,1
+Nuklear,1
+Grundstücksgeschäfte,1
+Emergenza,1
+Arbeitslosenentschädigung,1
+Sozialleistungen,1
+Elektronikproduktion,1
+Zierpflanzen,1
+Kostenplanung,1
+Materialien,1
+Kategorienmanagement,1
+Kfz-Händler,1
+Eigenvertrieb,1
+Kirchgemeinde,1
+Logopédie,1
+Makeup,1
+Landschaftsplanung,1
+Rennwagen,1
+Non-Life,1
+Hebekunst,1
+Schweiz,1
+Mosterei,1
+Reiseleitung,1
+Gewerbeversicherung,1
+Pool,1
+Zerstörungsfreie Prüfung,1
+ergotherapie,1
+Soins palliatifs,1
+Röntgenologie,1
+Raumausstattung,1
+Agrarhandel,1
+Mittelstand,1
+Biomedizin,1
+Härten,1
+Wohnen und Gewerbe,1
+Aktuar,1
+Schienennetz,1
+Lumimarkt,1
+Flugtechnik,1
+Fahrweg,1
+Holzproduktion,1
+Direktverkauf,1
+Türsysteme,1
+Biodiversität,1
+Spitäler,1
+Wohngruppen,1
+Friedhofsplanzen,1
+Chemieanlagenbau,1
+Sanitätstechnik,1
+Renovation,1
+Geographie,1
+Justizvollzugsdienst,1
+Satellitenbau,1
+Immobilienbewertung,1
+Heizung-Lüftung-Klima,1
+Spezialitäten,1
+Friedhof,1
+Marques et modèles,1
+Grossanlagenbau,1
+Développement durable,1
+Versandhandel,1
+Pflanzenproduktion,1
+Trockenbau,1
+Fondsenwesen,1
+Transplantation,1
+Privatversicherung,1
+Verbraucherbetrachtung,1
+Bioladen,1
+Wasser und Abwasser,1
+Ökologie,1
+Jagd,1
+Baustoffhandel,1
+Massage,1
+Schiffahrt,1
+Kinder- und Jugendhilfe,1
+Gemeinschaftswohnen,1
+Énergie,1
+pediatrics,1
+Fachkraft,1
+Personalführung,1
+Verteilnetze,1
+Wohnheimmanagement,1
+Digitale Werbung,1
+Folientechnik,1
+Kfz-Reparatur,1
+Tür- und Fensterhandel,1
+Tierärztliche Praxis,1
+Stipendien,1
+Bauzuliefer,1
+Verpackungen,1
+Architecture,1
+Versicherungswesen,1
+Elettronica,1
+Agrarberatung,1
+Finanzwesen,1
+Medizinische Geräte,1
+Économie énergétique,1
+Gasanlagen,1
+Produktdistribution,1
+Grid,1
+Betriebssicherheit,1
+Pulizia,1
+Digitale Bildung,1
+Geschäftskunden,1
+Healthcare IT,1
+Arbeitspädagogik,1
+Motorradbekleidung,1
+Distributionslogistik,1
+Mineralogie,1
+Sozialwissenschaften,1
+After-Sales,1
+Communauté,1
+Distributions,1
+Achat,1
+Medizinische Technik,1
+Praxisorganisation,1
+Tierhandel,1
+Polygrafie,1
+Gesellschaftsrecht,1
+Frischprodukte,1
+Wasserinstallation,1
+Online-Handel,1
+Privat,1
+Kommunalfahrzeuge,1
+Motorentechnik,1
+Einkauf und Vertrieb,1
+Kurse,1
+Werbetechnik,1
+Hydrologie,1
+Diabetes,1
+HF-Technologie,1
+Produktenwicklung,1
+Menuiserie,1
+Energiehandel,1
+Prozessleitsysteme,1
+Bewässerung,1
+Straßenverwaltung,1
+Marbrierung,1
+Jagd und Fischerei,1
+Psychosomatische Medizin,1
+Busunternehmen,1
+Distributeur,1
+Pharmacie,1
+Veranstaltungstechnik,1
+Komplementärmedizin,1
+Vérification de prestations,1
+Boden- und Parkplatzpflege,1
+Tiergesundheit,1
+Kfz-Zulieferer,1
+Hoflogistik,1
+Kranfertigung,1
+Polymechanik,1
+Tore,1
+Digital Business,1
+Horticulture,1
+Fluglinie,1
+Schweizer Bahn,1
+Atmosphärenwissenschaften,1
+Klettern,1
+Energieproduktion,1
+Yoga und Pilates,1
+Feuerwerk,1
+Metallwaren und Lackierungen,1
+Delikatessen,1
+Hundepflege,1
+Spirituosen,1
+Dokumentenmanagement,1
+Raumfahrt,1
+Rinderhaltung,1
+Schlussstechnik,1
+Diabetologie,1
+Incendie,1
+Pflege und Apotheke,1
+Licht und Elektrotechnik,1
+Coltivazione,1
+Werbebranche,1
+Strahlenschutz,1
+Heimware,1
+Sushi,1
+Secondhand,1
+Hôpitaux et laboratoires,1
+Baubedarf,1
+Pastoral,1
+R&D,1
+Gepäckverkehr,1
+Soin médical,1
+FM,1
+Ersatzteilhandel,1
+Parksysteme,1
+Prévoyance,1
+Teigwaren,1
+Digitale Lösungen,1
+Tierärztliche Forschung,1
+Osteuropa,1
+Heizungsbau,1
+Konsumentenprodukte,1
+Diplom,1
+Filtertechnik,1
+Pétrole,1
+Forensik,1
+Kohle,1
+Spritzgießtechnik,1
+Elektronikindustrie,1
+Straßenunterhaltung,1
+Endproduktion,1
+Nägel,1
+Holzwerkstoffe,1
+Nachtlogistik,1
+Schulische Betreuung,1
+Mikrosystemtechnik,1
+Schuhproduktion,1
+Öffentliche Verwaltung,1
+Rücksendungen,1
+Mörtel,1
+VRD,1
+Fahrzeuglogistik,1
+Electronique,1
+Macchine,1
+Brandmeldeanlagen,1
+Notstrom,1
+Bohren,1
+Schadenmanagement,1
+Gips und Zement,1
+Hebezeug,1
+Flugzeug,1
+Druck und Versand,1
+Raffinierung,1
+Warenannahme,1
+Körpererziehung,1
+Tankrevision,1
+"Wasser, Fernwärme und Gas",1
+Technische Informatik,1
+Bauherrenunterstützung,1
+Generalunternehmen,1
+Schulverpflegung,1
+Autogewerbe,1
+Gastec,1
+Depot,1
+Verleih,1
+Heizungs- und Kältetechnik,1
+Miete,1
+Kernkraft,1
+Personentransport,1
+Steuerrecht,1
+Fleischindustrie,1
+Sécurité industrielle,1
+Gesundheit und Sicherheit,1
+Chauffage,1
+Kommunales,1
+Tief- und Tunnelbau,1
+Ufficio,1
+Ultrafrische,1
+Bauaufsicht,1
+Galvanoplastik,1
+Altersvorsorge,1
+Antriebssysteme,1
+Hydrometrie,1
+Idro-Termo-Sanitario,1
+Baubetriebsleitung,1
+E-Health,1
+Netze,1
+Hardware-Test,1
+Transportation,1
+Fachschule,1
+Tourisme,1
+Klinische Versorgung,1
+Office-Artikel,1
+Büroausstattung,1
+Gerätebau,1
+Daten,1
+Existenzsicherung,1
+Schadenbehandlung,1
+Entomologie,1
+Maschinen und Fahrzeuge,1
+Gerichtsverwaltung,1
+cardiologie,1
+Regulierung,1
+Haare und Nägel,1
+Athletik,1
+Produktsicherheit,1
+Infusionslösungen,1
+Services,1
+Recyclage,1
+Kraftwerkstechnik,1
+Datenzentrum,1
+Kleinanlagenbau,1
+Wasser und Energie,1
+Krananlagen,1
+Messwesen,1
+Thermische Energie,1
+Immigration,1
+Sécurité au travail,1
+Drucktechnik,1
+Förderfahrzeuge,1
+Klima und Kälte,1
+Frischwaren,1
+Notfallmanagement,1
+Bauwirtschaft,1
+Energieanlagen,1
+Zerlegung,1
+Reiseversicherungen,1
+Steuerberatung,1
+Kran,1
+Gaststätten,1
+Ski und Snowboard,1
+Verbrauchsgüter,1
+Kfz-Technik,1
+entreprise,1
+Smart Grid,1
+Galvanik,1
+Qualitätskontrolle,1
+Fotowerkstatt,1
+Warenhandel,1
+Schlüsseltechnik,1
+Galvanisation,1
+KMU,1
+Metallproduktion,1
+Potierdienst,1
+Eisproduktion,1
+medizinische Beratung,1
+Schuhmacher,1
+Wohngemeinschaft,1
+Forstbetreuung,1
+Fromagerie,1
+Sécurité et Qualité,1
+Croix-Rouge,1
+Webdesign,1
+Industriechemikalien,1
+Systèmes d'information,1
+Wasserreinigung,1
+Postdienstleistungen,1
+Schankwesen,1
+Suchthilfe,1
+Generalagentur,1
+Automobilmechatronik,1
+Arbeit,1
+Servizi commerciali,1
+Petrochemie,1
+Rübenproduktion,1
+Ventiltechnik,1
+Papierherstellung,1
+"Industrie, Logistik, Lebensmittel",1
+Pâtisserie,1
+Vin,1
+Drehtechnik,1
+Urgences,1
+Palliative Care,1
+Kategorienentwicklung,1
+Kohletransport,1
+Nahrung,1
+Oncologie,1
+Kosten,1
+Raumgestaltung,1
+Ingenieurleistungen,1
+Nasslackierung,1
+Biomasse,1
+Fondation,1
+Soziokulturelle Arbeit,1
+Agrartechnologie,1
+Gips- und Zementwerkstoffe,1
+Raumklima,1
+Grossprojekte,1
+Smart Metering,1
+Rock,1
+Baumpflege,1
+Umweltmanagement,1
+Testmanagement,1
+Tourismus,1
+Kranunternehmen,1
+Gemeinnütziges,1
+Zweirad,1
+Coop,1
+Gießerei,1
+Cuisine collective,1
+Gipssysteme,1
+Klima- und Kältetechnik,1
+Automatenbetrieb,1
+Leittechnik,1
+Bio-Produkte,1
+Skulptur,1
+"Papierwaren, Möbel, Bürobedarf",1
+Strafvollzug,1
+Verladetechnik,1
+Elektrische Antriebstechnik,1
+Rechtsanwalt,1
+Altersheim,1
+Klinische Informatik,1
+Berufliche Eingliederung,1
+Flugzeugausstattung,1
+Kundenbindung,1
+Schaltanlagenbau,1
+Generalunternehmung,1
+Furniture,1
+Winterdienst,1
+Isolation,1
+Devisierung,1
+Alterspsychiatrie,1
+Raffinerie,1
+Podologie,1
+ERP-Systeme,1
+Tore und Türen,1
+Privatkundenberatung,1
+Elektrogeräte,1
+Sägewerk,1
+Finanz,1
+Technische Kaufmannschaft,1
+Zahlungsstrom,1
+Krebsforschung,1
+Agroécologie,1
+Assurance,1
+Sensortechnik,1
+Analyse,1
+Export-Import,1
+Tankwagen,1
+Glas- und Metallbau,1
+Gesundheitsamt,1
+CAD-Design,1
+Verlage,1
+Übersetzungen,1
+LifeSciences,1
+Energiesysteme,1
+Autobahn,1
+Versuchstechnik,1
+Produktsupport,1
+Collectivités,1
+Türen und Tore,1
+Medizinische Praxis,1
+Textilpflege,1
+Hotelfach,1
+Aftermarket,1
+Maritime,1
+Helikopter,1
+Badeinfrastruktur,1
+MRO,1
+Schwimmbäder,1
+Schwimmbadunterhalt,1
+Bootbau,1
+Hubschrauber,1
+Gemüseanbau,1
+Diagnostics,1
+Flugzeuge,1
+Präzisionstechnik,1
+Plastik,1
+Zaun und Tor,1
+Geriatrie,1
+Schaltschrankbau,1
+Verpackungstechnologie,1
+Betriebsausrüstung,1
+Geologie,1
+Motorradzubehör,1
+IT-Beratung,1
+Zimmermann,1
+Sportwissenschaft,1
+Bankdienstleistungen,1
+Eventtechnik,1
+Kriminalpolizei,1
+Eigentum,1
+Biegerie,1
+Schadstoffe,1
+Virtual Reality,1
+Kompostierung,1
+Pasta,1
+Tiefkühlprodukte,1
+Sprachschule,1
+Tierbedarf,1
+Elektroindustrie,1
+Hydraulique,1
+Gaspipeline,1
+Insektenabwehr,1
+Golf,1
+Lebensmittelqualität,1
+Baugewerbe,1
+Personalvermittlung,1
+"Papeterie, Möbel, Bürobedarf",1
+Pédagogie,1
+Nachbehandlung,1
+E-Bike,1
+Allergologie,1
+Simulationstechnologie,1
+Fachhandwerk,1
+AV-Systeme,1
+Internet der Dinge,1
+LWL-Technik,1
+Kabelverlegung,1
+Flugzeugherstellung,1
+Spezialarbeiten,1
+Gebäude,1
+Erdbewegung,1
+Fernhandel,1
+Schweizerische Eisenbahnen,1
+Webhosting,1
+Schwerverkehr,1
+Automatenbetreung,1
+Soziale Sicherheit,1
+medizinische Pflege,1
+Kunststoffproduktion,1
+Steinmetzwerkstatt,1
+Webshop,1
+Verladung,1
+Traktoren,1
+Feldtechnik,1
+Naturmedizin,1
+Fertigungsmesstechnik,1
+Regeltechnik,1
+Care,1
+Lebensmittelanalytik,1
+operation,1
+Schweinproduktion,1
+Tierärztliche Versorgung,1
+Kaffeehaus,1
+Spezialversorgung,1
+Fashion,1
+Casino,1
+Bauhaus,1
+Flugbetrieb,1
+Naturkosmetik,1
+Technischer Vertrieb,1
+ICT,1
+Santé maternelle et infantile,1
+Expansion,1
+Schiffsmotoren,1
+Galvanisierung,1
+Gartenunterhalt,1
+Regierung,1
+Publicité,1
+Fördermittel,1
+Hightech,1
+Medical,1
+Zentrallager,1
+Naturkatastrophen,1
+OP-Technik,1
+Thermische Anlagen,1
+Grünpflege,1
+Fahrzeugverkehr,1
+Bäckerei-Konditorei-Café,1
+Reifenhandel,1
+Giesserei,1
+Leistungsmanagement,1
+Glasproduktion,1
+Costruzioni,1
+Start-up,1
+Statik,1
+Elektromaschinenbau,1
+Maschinenmontage,1
+Elettrificazione,1
+Ladenmanagement,1
+Internationales Entwicklungsprojekt,1
+Güterkauf,1
+Community,1
+Schwimmbadtechnik,1
+Zivildienst,1
+Paketdienstleistungen,1
+Beschichtung,1
+Kostencontrolling,1
+Speicher,1
+Kino,1
+Justizvollzug,1
+Stiftungen,1
+Tierkörperverarbeitung,1
+Startups,1
+Handelsware,1
+Test,1
+Sozialdienstleistungen,1
+Eventmarketing,1
+Hebe- und Fördertechnik,1
+Produktdurchsetzung,1
+Büromöbel,1
+Warenversorgung,1
+Brenner,1
+Liegenschaftsverwaltung,1
+Wellenproduktion,1
+Aéronautique,1
+Bereich,1
+Kleidung und Spielware,1
+Fachkundige Gesundheitsberatung,1
+Medizinpraxis,1
+Grütze,1
+Fernsehvertrieb,1
+Autolackierung,1
+Archäologie,1
+Nahverkehr,1
+Druck,1
+Bohrungstechnik,1
+Somatik,1
+Fahrstuhle,1
+EDV,1
+Abpackung,1
+Immobilienrecht,1
+BVG,1
+Digitaltechnologie,1
+Automaten,1
+Energieerzeugung,1
+Recreational activities,1
+Kaufmännische Verwaltung,1
+Occupational health,1
+E-Mail-Marketing,1
+Theologie,1
+Generika,1
+Kfz-Werkstatt,1
+Haushalt und Elektro,1
+Melde- und Kontrollwesen,1
+GMP,1
+Digitale Marketing,1
+Speiseverarbeitung,1
+Brocken,1
+Busse,1
+Fernmeldetechnik,1
+Maschinenfuehrer,1
+Socioprofessionnel,1
+Grünbereiche,1
+Dokumentenverkehr,1
+Gemeinschaftsgastronomie,1
+Luxushotellerie,1
+Regulierter Sektor,1
+Pharmazeutik,1
+Klinische Anwendungen,1
+Schadstoffsanierung,1
+Kostenrechnung,1
+Gästebetreuung,1
+Plastica,1
+Agronomie,1
+Mietrecht,1
+Kulturtechnik,1
+Naildesign,1
+Leistungszentrum,1
+Raumforschung,1
+Förderung und Gesundheit,1
+Foto,1
+Großhandel,1
+Plastikverarbeitung,1
+Seilbahn,1
+Stahlproduktion,1
+Technische Verkauf,1
+Messe,1
+Basketball,1
+Wein,1
+pediatrie,1
+Maschinenhandel,1
+Abfallwirtschaft,1
+Rechtswissenschaften,1
+Facility Services,1
+Kieswerk,1
+Baugesetz,1
+Génie Civil,1
+Automechanik,1
+Bewegungstechnik,1
+Schaltungstechnik,1
+Gartenarbeit,1
+Lichtplanung,1
+Dialogmarketing,1
+Tierprodukte,1
+Großprojekte,1
+Gemüseproduktion,1
+Grundstückswirtschaft,1
+Wohngemeinschaften,1
+Influencer,1
+Vorsorge,1
+Montaggio,1
+Bühne,1
+Sicurezza,1
+Sozialpädagogik,1
+Mechanische Fertigung,1
+Bodensysteme,1
+Sertissage,1
+Fahrzeugverkauf,1
+Carrosserie,1
+Druck und Logistik,1
+Automobilzulieferer,1
+Eau,1
+Alarmen,1
+Naturstein,1
+Modenachfolge,1
+Leder und Textil,1
+Frästechnik,1
+Systementwicklung,1
+Altersforschung,1
+Schmelzen,1
+Präzisionsmaschinen,1
+Krankenkasse,1
+Krankenkassen,1
+Opferberatung,1
+Hebekunststoff,1
+Supply Chain Management,1
+Bauökologie,1
+Pflegeheim,1
+Wachdienst,1
+Charpente,1
+Heimpflege,1
+Café & Bar,1
+Heime,1
+Agrarproduktion,1
+Sterilisation,1
+Pflege und Betreuung,1
+Familienbetreuung,1
+Schaden,1
+Teile,1
+Kinderpflege,1
+Machines agricoles,1
+Bürgerservice,1
+Glasfaserkommunikation,1
+Bildgestaltung,1
+Sustainability,1
+Brückenbau,1
+Regionale Entwicklung,1
+Maurerhandwerk,1
+Soins infirmiers à domicile,1
+Konzern,1
