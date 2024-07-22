@@ -266,6 +266,7 @@ export default function PieChart() {
 
 				<Tabs defaultActiveKey="chart" id="uncontrolled-tab-example" className="mb-3"
 					onSelect={(key) => {
+						setDataSetting({...dataSetting,page:0})
 						setCurrentTab(key)
 					}}
 				>
