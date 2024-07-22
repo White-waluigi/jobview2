@@ -65,8 +65,8 @@ export default function TableView({dataSettings,setDataSettings}) {
 
 								{ ["industry","industrySector","job","specialization"].map((field) => (
 									<td key={field}
-										style={{cursor:"pointer"}}
-										className="text-primary"
+
+										style={dataSettings.filters&&dataSettings.filters[field]==row[field]?{}:{color:"blue",cursor:"pointer"}}
 										onClick={()=>{
 											const newDataSettings=structuredClone(dataSettings)
 											newDataSettings.filters??={}
