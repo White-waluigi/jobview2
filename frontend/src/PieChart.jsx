@@ -9,10 +9,13 @@ import {useLocation,useNavigate} from 'react-router-dom'
 import {Button} from 'react-bootstrap'
 import {Dropdown} from 'react-bootstrap'
 import React from 'react'
+import {XLg} from 'react-bootstrap-icons'
 
+import {Tab, Tabs} from 'react-bootstrap'
 //import jquery
 import Papa from 'papaparse';
-
+import Table from 'react-bootstrap/Table';
+import TableView from './TableView.jsx'
 
 //const API_URL=NODE_ENV=="production"?"https://jobs.marvinwyss.ch/":"http://localhost:3003/"
 const API_URL=process.env.NODE_ENV=="production"?"https://jobs.marvinwyss.ch/api/jobs/":"http://localhost:3003/api/jobs/"
@@ -30,13 +33,28 @@ const readCSV= async (file) => {
 	})
 }
 
+const colorPalette= 
+	[
+		"#00ff00", // lime
+		"#ff0000", // red
+		"#00ffff", // aqua
+		"#8b4513", // saddlebrown
+		"#228b22", // forestgreen
+		"#4b0082", // indigo
+		"#ffd700", // gold
+		"#0000ff", // blue
+		"#ff1493", // deeppink
+		"#ffe4b5", // moccasin
+		"#888", //grey
+	]
+
 
 const carroussel=["industry","industrySector","job","specialization"]
 
 
 const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
 
-	<h2
+	<h3
 		style={{cursor:"pointer",color:"blue"}}
 		href=""
 		ref={ref}
@@ -46,7 +64,7 @@ const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
 		}}
 	>
 		{children}
-	</h2>
+	</h3>
 ));
 
 
@@ -69,6 +87,7 @@ export default function PieChart() {
 	const [isForwardNavigation,setIsForwardNavigation] = useState(true)
 
 
+	const [currentTab,setCurrentTab] = useState("chart")
 
 
 
@@ -76,7 +95,7 @@ export default function PieChart() {
 		const newDataSetting = JSON.parse(urlGetParams.get("data"))??{page:0,groupby:"industry"}
 
 
-		
+
 		if(isForwardNavigation && dataSetting){
 			setDataSettingStack([...dataSettingStack,dataSetting])
 		}
@@ -115,8 +134,8 @@ export default function PieChart() {
 
 		let otherId=-1
 		let resp
-		if(dataSetting.filter){
-			resp=await axios.get(API_URL,{params:{page:id,groupby:field,filterField:dataSetting.filter.field,filterValue:dataSetting.filter.value}})
+		if(dataSetting.filters){
+			resp=await axios.get(API_URL,{params:{page:id,groupby:field,filters:JSON.stringify(dataSetting.filters)}})
 		}else{
 			resp=await axios.get(API_URL,{params:{page:id,groupby:field}})
 		}
@@ -129,6 +148,8 @@ export default function PieChart() {
 		let ddata=data.jobs.reduce((acc,curr,index) => {
 			acc.labels.push(curr['text'])
 			acc.data.push(curr['count'])
+			acc.backgroundColor.push(colorPalette[index%colorPalette.length])
+
 			if(curr['p']==1){
 				otherId=index
 			}
@@ -136,7 +157,8 @@ export default function PieChart() {
 		}
 			,{
 				labels:[],
-				data:[]
+				data:[],
+				backgroundColor: []
 			})
 
 
@@ -146,6 +168,7 @@ export default function PieChart() {
 			datasets: [
 				{
 					data:ddata.data,
+					backgroundColor: ddata.backgroundColor,
 					borderWidth: 1,
 				},
 			],
@@ -165,15 +188,17 @@ export default function PieChart() {
 
 	const selectSegment=(idx) => {
 		if(idx==data._meta.otherId){
-			setDataSetting({page:dataSetting.page+1,groupby:dataSetting.groupby, filter:dataSetting.filter})
+			setDataSetting({page:dataSetting.page+1,groupby:dataSetting.groupby,filters:dataSetting.filters})
 		}else{
 
 			let current=carroussel.indexOf(dataSetting.groupby)
 			let next=(current+1)%carroussel.length
-			setDataSetting({page:0,groupby:carroussel[next], filter:{
-				field:carroussel[current],
-				value:data._meta.data.jobs[idx].text
+			setDataSetting({page:0,groupby:carroussel[next], filters:{
+
+				...dataSetting.filters??{},
+				[carroussel[current]]:data._meta.data.jobs[idx].text
 			}})
+
 		}
 	}
 
@@ -228,31 +253,6 @@ export default function PieChart() {
 		}
 		return "error"
 	}
-	function filterToText(dataSetting){
-		let retval=[]
-
-
-
-		retval.push("Übersicht über alle Schweizer ")
-		retval.push(fieldToText(dataSetting.groupby,false))
-
-		if(dataSetting.filter){
-			retval.push(" welche Teil "+fieldToText(dataSetting.filter.field,true)+" "+dataSetting.filter.value+" sind")
-		}
-		else{
-			retval.push("")
-		}
-
-		retval.push(" (Seite "+(dataSetting.page+1)+")")
-
-		return retval
-
-	}
-
-
-
-	const titleText=dataSetting?filterToText(dataSetting):[]
-
 
 
 
@@ -263,64 +263,116 @@ export default function PieChart() {
 
 			<>
 
-				
-				<h2>{titleText[0]}</h2>
 
-				<Dropdown>
-					<Dropdown.Toggle id="dropdown-basic" as={CustomToggle}>
-						{titleText[1]}
-					</Dropdown.Toggle>
+				<Tabs defaultActiveKey="chart" id="uncontrolled-tab-example" className="mb-3"
+					onSelect={(key) => {
+						setCurrentTab(key)
+					}}
+				>
+					<Tab eventKey="chart" title="Chart" />
+					<Tab eventKey="table" title="Tabelle" />
+					<Tab eventKey="hints" title="Hinweise" />
+				</Tabs>
 
-					<Dropdown.Menu>
+				{currentTab=="chart"&&
+
+				<>
+
+					{
+						(data._meta.data.jobs.length==0)?
+							<h3>Keine Jobs vorhanden</h3>
+							:
+							<Pie key={JSON.stringify(data._meta)} data={data} options={options} />
+					}
+				</>
+				}
+				{currentTab=="table"&&
+					<TableView dataSettings={dataSetting} setDataSettings={setDataSetting} />
+					}
+
+				{["table","chart"].indexOf(currentTab)!=-1&&
+				<>
+					<h3 className="mt-3">{dataSetting.page==0?"":"Seite "+(dataSetting.page+1)+" der "}
+						Übersicht über alle Schweizer
+					</h3>
+
+					{"table"==currentTab?<h3>Stellenausschreibungen</h3>:
+					<Dropdown>
+						<Dropdown.Toggle id="dropdown-basic" as={CustomToggle}>
+							{fieldToText(dataSetting.groupby,false)}
+						</Dropdown.Toggle>
+
+						<Dropdown.Menu>
+							{
+								carroussel.map((item) => (
+									<Dropdown.Item key={item} onClick={() => setDataSetting({...dataSetting,groupby:item})}>{fieldToText(item,false)}</Dropdown.Item>
+								))
+
+							}
+						</Dropdown.Menu>
+					</Dropdown>
+					}
+
+
+					{dataSetting.filters&&Object.keys(dataSetting.filters).length>0&&
+					<>
+						<h3>welche Teil </h3>
 						{
-							carroussel.map((item) => (
-								<Dropdown.Item key={item} onClick={() => setDataSetting({...dataSetting,groupby:item})}>{fieldToText(item,false)}</Dropdown.Item>
+							Object.entries(dataSetting.filters).map(([field,filter]) => (
+
+								<div key={field} className="py-1 my-1" style={{backgroundColor:"#CCCBFF",cursor:"pointer",color:"#0000AA"}}
+
+									onClick={() => setDataSetting({
+										...dataSetting,
+											filters: Object.fromEntries(Object.entries(dataSetting.filters).filter(([key]) => key!=field))
+									})}
+								><span 
+
+
+								>
+
+									<XLg className="me-3 pb-1 "/>
+									{fieldToText(field,true)} {filter} sind </span></div>
 							))
-
 						}
-					</Dropdown.Menu>
-				</Dropdown>
+					</>
+					}
 
 
-				<h2><span 
-					style={{cursor:"pointer",color:"red"}}
 
-					onClick={() => setDataSetting({...dataSetting,filter:null})}
-				>{titleText[2]}</span>{titleText[3]}</h2> 
 
-				{
-					(data._meta.data.jobs.length==0)?
-						<h3>Keine Jobs vorhanden</h3>
-						:
-						<Pie key={JSON.stringify(data._meta)} data={data} options={options} />
+					<div className="my-3 d-flex flex-column overflow-auto">
+						<div className="mx-auto my-2">
+							<b>Total: {data._meta.numJobs.toLocaleString()} Stellenausschreibungen</b>
+						</div>
+						<div className="d-flex justify-content-center">
+
+							<Button className="mx-1" onClick={() => setDataSetting({page:0,groupby:"industry",filters:null})}>Zurück zur Industrieübersicht</Button>
+							<Button
+								disabled={!canNavigateBack}
+								onClick={popDataSettingStack}
+
+							>
+								Zurück
+							</Button>
+						</div>
+					</div>
+				</>
 				}
 
 
-				<div className="my-3 d-flex flex-column overflow-auto">
-					<div className="mx-auto my-2">
-						<b>Total: {data._meta.numJobs.toLocaleString()} Stellenausschreibungen</b>
-					</div>
-					<div className="d-flex justify-content-center">
-
-						<Button className="mx-1" onClick={() => setDataSetting({page:0,groupby:"industry",filter:null})}>Zurück zur Industrieübersicht</Button>
-						<Button
-							disabled={!canNavigateBack}
-							onClick={popDataSettingStack}
-
-						>
-							Zurück
-						</Button>
-					</div>
-				</div>
-
-				<h5>Hinweise</h5>
-				<ul>
-					<li>Ein Klick auf ein Segment zeigt eine Übersicht über das Segment an, ein Klick auf "Weitere" zeigt die nächste Seite an</li>
-					<li>Ähnliche Jobs können in verschiedenen Industrien vorkommen. Z.b. Wirtschaftsdozent</li>
-					<li>Verschiedene Industrien können dieselben Industrie Sektoren haben, ein Sektor kann also über alle Industrien gesehen mehr Jobs haben.</li>
-					<li>Verwenden Sie den Zurück-Button um zur vorherigen Ansicht zu gelangen</li>
-					<li>Mehr interessante Projekte finden Sie auf <a href="https://www.marvinwyss.ch">meiner Website</a></li>
-				</ul>
+				{currentTab=="hints"&&
+					<>
+						<h5>Hinweise</h5>
+						<ul>
+							<li>Ein Klick auf ein Segment zeigt eine Übersicht über das Segment an, ein Klick auf "Weitere" zeigt die nächste Seite an</li>
+							<li>Ähnliche Jobs können in verschiedenen Industrien vorkommen. Z.b. Wirtschaftsdozent</li>
+							<li>Verschiedene Industrien können dieselben Industrie Sektoren haben, ein Sektor kann also über alle Industrien gesehen mehr Jobs haben.</li>
+							<li>Verwenden Sie den Zurück-Button um zur vorherigen Ansicht zu gelangen</li>
+							<li>Mehr interessante Projekte finden Sie auf <a href="https://www.marvinwyss.ch">MarvinWyss.ch</a></li>
+						</ul>
+					</>
+				}
 
 
 
@@ -328,7 +380,21 @@ export default function PieChart() {
 
 			</>
 			}
+
 		</div>
 	)
 
 } 
+/*
+			<p>Todo:
+
+				Add indexes to database
+				add table view
+				multiple filters
+				filters as list
+				title below chart
+				primary sector and secondary sector
+				strip leading and trailing spaces
+
+			</p>
+			*/

@@ -39,25 +39,53 @@ var jsonParser = bodyParser.json()
 // create application/x-www-form-urlencoded parser
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
+
+const getParams = (query) => {
+	//parse int
+	const page=parseInt(query.page??0)
+	const groupby=query.groupby??"industry"
+
+	const filters=[]
+
+	const filterObj=query.filters?JSON.parse(query.filters):null
+
+	if(filterObj){
+		for(const key in filterObj){
+
+			if(["industry","industrySector","job","specialization"].indexOf(key)==-1){
+				res.status(400).json({error:"filter not found"})
+				return
+			}
+			if(filters.find((filter)=>filter.field==key)){
+				res.status(400).json({error:"filter already set"})
+				return
+			}
+
+			filters.push({field:key,value:filterObj[key]})
+		}
+	}
+	if(["industry","industrySector","job","specialization"].indexOf(groupby)==-1){
+		throw new Error("groupby not found")
+	}
+
+	return {page,groupby,filters}
+
+
+}
 // POST /login gets urlencoded bodies
 app.get('/api/jobs', urlencodedParser, async function (req, res) {
 
 	try{
 
-		//parse int
-		const page=parseInt(req.query.page??0)
-		const groupby=req.query.groupby??"industry"
-		const filterField=req.query.filterField
-		const filterValue=req.query.filterValue
 
-		if(["industry","industrySector","job","specialization"].indexOf(groupby)==-1){
-			res.status(400).json({error:"groupby not found"})
-			return
-		}
-		if(filterField && ["industry","industrySector","job","specialization"].indexOf(filterField)==-1){
-			res.status(400).json({error:"filterField not found"})
-			return
-		}
+		const {page,groupby,filters} = getParams(req.query)
+
+
+
+
+
+
+		const filterQuery=filters.map((filter,index)=>`$${index*2+4}:name=$${index*2+5}`).join(" AND ")
 
 		const query = `WITH topIndustries AS (
 			SELECT 
@@ -66,10 +94,16 @@ app.get('/api/jobs', urlencodedParser, async function (req, res) {
 				0 as p
 			FROM 
 				jobs
-			${filterField?
-					`WHERE
-					$4:name=$5
-				`:""}
+
+			${filters.length>0?
+					`
+			WHERE
+				${filterQuery}
+			`
+					:""
+			}
+
+
 			GROUP BY
 				$3:name
 			ORDER BY
@@ -89,12 +123,12 @@ app.get('/api/jobs', urlencodedParser, async function (req, res) {
 				jobs
 			WHERE
 				$3:name not in (SELECT $3:name FROM topIndustries)
-			${filterField?
+			${filters.length>0?
 					`
-			AND
-				$4:name=$5
-
-`:""
+				AND
+				${filterQuery}
+				`
+					:""
 			}
 		),
 
@@ -134,16 +168,12 @@ app.get('/api/jobs', urlencodedParser, async function (req, res) {
 
 	`	
 
-		console.log(query)
-		console.log({filterValue,filterField})
 
 
 
 
 
-		const jobs = await db.any(query,[page*10,(page+1)*10,groupby,filterField,filterValue])
-
-		console.log(jobs)
+		const jobs = await db.any(query,[page*10,(page+1)*10,groupby,...filters.flatMap((filter)=>[filter.field,filter.value])])
 
 
 
@@ -159,5 +189,55 @@ app.get('/api/jobs', urlencodedParser, async function (req, res) {
 })
 
 
+app.get('/api/list', urlencodedParser, async function (req, res) {
+
+	try{
+		const {page,groupby,filters} = getParams(req.query)
+
+		const filterQuery=filters.map((filter,index)=>`$${index*2+4}:name=$${index*2+5}`).join(" AND ") 
+
+		const query = `SELECT 
+			industry,
+			"industrySector",
+			job,
+			specialization,
+			id,
+			title
+		FROM
+			jobs
+			${filters.length>0?
+
+					`
+			WHERE
+				${filterQuery}
+			`
+					:""
+
+			}
+		ORDER BY
+			industry,
+			"industrySector",
+			job,
+			specialization
+		OFFSET $1 LIMIT 11
+				`
+
+		let jobs = await db.any(query,[page*10,(page+1)*10,groupby,...filters.flatMap((filter)=>[filter.field,filter.value])])
+
+		const hasNext = jobs.length==11
+
+		jobs=jobs.slice(0,10)
+
+
+		res.json({jobs,hasNext:hasNext})
+	}
+	catch(e){
+		console.log(e)
+		res.status(500).json({error:"internal error"})
+	}
+
+
+
+})
 
 app.listen(3003)
