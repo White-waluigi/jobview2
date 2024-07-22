@@ -292,7 +292,13 @@ export default function PieChart() {
 
 				{["table","chart"].indexOf(currentTab)!=-1&&
 				<>
-					<h3 className="mt-3">{dataSetting.page==0?"":"Seite "+(dataSetting.page+1)+" der "}
+					<h3 className="mt-3">
+						
+						{
+							"table"==currentTab?"":
+								(dataSetting.page==0?"":"Seite "+(dataSetting.page+1)+" der ")
+						}
+
 						Übersicht über alle Schweizer
 					</h3>
 
