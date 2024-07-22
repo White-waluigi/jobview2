@@ -72,6 +72,7 @@ export default function TableView({dataSettings,setDataSettings}) {
 											newDataSettings.filters??={}
 											newDataSettings.filters[field]=row[field]
 											setDataSettings(newDataSettings)
+											setPage(0)
 										}
 										}
 									>{row[field]}</td>
