@@ -47,7 +47,7 @@ const getParams = (query) => {
 
 	const filters=[]
 
-	const filterObj=query.filters?JSON.parse(query.filters):null
+	const filterObj=(query.filters&&query.filters!=="undefined")?JSON.parse(query.filters):null
 
 	if(filterObj){
 		for(const key in filterObj){
