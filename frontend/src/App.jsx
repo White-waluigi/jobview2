@@ -12,15 +12,15 @@ function App() {
 
 	const [path,setPath] = useState(['Home','Test','Test2'])
 
-  return (
+	ReactGA.initialize('G-SMP1DRGFM9');
+	return (
 
-	  ReactGA.initialize('G-SMP1DRGFM9');
-	  <BrowserRouter>
-		  <Routes>
-			  <Route path="*" element={<PieChart />} />
-		  </Routes>
-	  </BrowserRouter>
-  )
+		<BrowserRouter>
+			<Routes>
+				<Route path="*" element={<PieChart />} />
+			</Routes>
+		</BrowserRouter>
+	)
 }
 
 export default App
