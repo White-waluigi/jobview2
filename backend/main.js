@@ -65,7 +65,7 @@ const getParams = (query) => {
 		}
 	}
 	if(["industry","industrySector","job","specialization"].indexOf(groupby)==-1){
-		throw new Error("groupby not found")
+		throw new Error("groupby not found:"+groupby)
 	}
 
 	return {page,groupby,filters}

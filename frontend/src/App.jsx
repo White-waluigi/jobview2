@@ -6,7 +6,7 @@ import PieChart from './PieChart'
 //import bs
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import ReactGA from 'react-ga3';
+import ReactGA from 'react-ga4';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
 
