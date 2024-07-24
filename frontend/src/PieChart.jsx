@@ -358,7 +358,7 @@ export default function PieChart() {
 							<Dropdown.Menu>
 								{
 									carroussel.map((item) => (
-										<Dropdown.Item key={item} onClick={() => setDataSetting({...dataSetting,groupby:item})}>{fieldToText(item,false)}</Dropdown.Item>
+										<Dropdown.Item key={item} onClick={() => setDataSetting({...dataSetting,groupby:item,page:0})}>{fieldToText(item,false)}</Dropdown.Item>
 									))
 
 								}

@@ -10,6 +10,8 @@ var app = express()
 app.use(cors())
 
 
+let jsdom = require("jsdom");
+
 
 //connect to localhost
 //
@@ -202,7 +204,8 @@ app.get('/api/list', urlencodedParser, async function (req, res) {
 			job,
 			specialization,
 			id,
-			title
+			title,
+			"rawHtml" 
 		FROM
 			jobs
 			${filters.length>0?
@@ -226,7 +229,60 @@ app.get('/api/list', urlencodedParser, async function (req, res) {
 
 		const hasNext = jobs.length==11
 
+
+
+
 		jobs=jobs.slice(0,10)
+
+		
+
+		//convert raw html to text
+		const { JSDOM } = jsdom;
+		jobs=jobs.map((job)=>{
+			const dom = new JSDOM(job.rawHtml);
+			//remove script and style tags
+
+			const body = dom.window.document.body;
+			const script = body.querySelector("script")
+			if(script){
+				script.remove()
+			}
+			const style = body.querySelector("style")
+			if(style){
+				style.remove()
+			}
+
+			//get text
+			let text = body.textContent
+
+
+			//add newlines after each tag
+			let recurse=(node,sofar)=>{
+				if(node.nodeType==3){
+					return sofar+node.textContent+"\n"
+				}
+				if(node.nodeType==8){
+					return sofar
+				}
+				if(node.nodeType==1){
+					let text=""
+					for(let i=0;i<node.childNodes.length;i++){
+						text=recurse(node.childNodes[i],text)
+					}
+					return sofar+text
+				}
+				return sofar
+
+			}
+			text=recurse(body,"")
+			
+			//remove all newlines without text
+			text=text.split("\n").filter((line)=>line.trim()!="").join("\n")
+
+			job.description=text
+
+			return job
+		})
 
 
 		res.json({jobs,hasNext:hasNext})

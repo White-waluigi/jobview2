@@ -2,6 +2,8 @@ import {Table} from 'react-bootstrap';
 import {useState,useEffect} from 'react'
 import {Button} from 'react-bootstrap'
 
+import * as BS from 'react-bootstrap'
+
 import axios from 'axios'
 
 const API_URL=process.env.NODE_ENV=="production"?"https://jobs.marvinwyss.ch/api/list/":"http://localhost:3003/api/list/"
@@ -10,6 +12,9 @@ export default function TableView({dataSettings,setDataSettings}) {
 
 	const [data,setData] = useState(null)
 	const [page,setPage] = useState(0)
+
+
+	const [modalText,setModalText] = useState(null)
 
 	useEffect(() => {
 		loadData()
@@ -61,7 +66,11 @@ export default function TableView({dataSettings,setDataSettings}) {
 					<tbody>
 						{data.jobs.map((row) => (
 							<tr key={row.id}>
-								<td>{row.title}</td>
+								<td
+									style={{color:"blue",cursor:"pointer"}}
+									onClick={()=>setModalText(row.description)}
+								>
+								{row.title}</td>
 
 								{ ["industry","industrySector","job","specialization"].map((field) => (
 									<td key={field}
@@ -82,6 +91,24 @@ export default function TableView({dataSettings,setDataSettings}) {
 					</tbody>
 				</Table>
 			</div>
+
+
+			<BS.Modal show={modalText!=null} onHide={()=>setModalText(null)}>
+				<BS.Modal.Header closeButton>
+					<BS.Modal.Title>Modal heading</BS.Modal.Title>
+				</BS.Modal.Header>
+				<BS.Modal.Body
+					style={{whiteSpace:"pre-wrap"}}
+				>{modalText}</BS.Modal.Body>
+				<BS.Modal.Footer>
+					<BS.Button variant="secondary" onClick={()=>setModalText(null)}>
+						Close
+					</BS.Button>
+					<BS.Button variant="primary" onClick={()=>setModalText(null)}>
+						Save Changes
+					</BS.Button>
+				</BS.Modal.Footer>
+			</BS.Modal>
 		</>
 	)
 
