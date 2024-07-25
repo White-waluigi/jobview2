@@ -299,7 +299,7 @@ export default function PieChart() {
 				>
 					<Tab eventKey="chart" title="Chart">
 					</Tab>
-					<Tab eventKey="table" title="Table">
+					<Tab eventKey="table" title="Tabelle">
 					</Tab>
 					<Tab eventKey="hints" title="Hinweise">
 					</Tab>
